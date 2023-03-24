@@ -1,0 +1,55 @@
+{
+  "name": "vuejs-blurhash",
+  "version": "0.3.0",
+  "description": "Blurhash implementation for VueJS",
+  "keywords": [
+    "blurhash",
+    "blur",
+    "hash",
+    "image",
+    "vuejs",
+    "component"
+  ],
+  "license": "MIT",
+  "author": "beckerin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beckerin/vuejs-blurhash"
+  },
+  "homepage": "https://blurha.sh",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsup",
+    "build:demo": "rm -rf ./docs && webpack -p --config webpack.demo.config.js",
+    "demo": "webpack-dev-server --config webpack.demo.config.js --hot --progress",
+    "prettier": "prettier src/**/*.ts",
+    "prettier-fix": "npm run prettier -- --write",
+    "ts": "tsc",
+    "ts:watch": "npm run ts -- --noEmit --watch"
+  },
+  "peerDependencies": {
+    "blurhash": "^2.0.3",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "blurhash": "^2.0.3",
+    "html-webpack-plugin": "^4.5.0",
+    "prettier": "2.1.2",
+    "ts-loader": "8.0.6",
+    "tsup": "^6.5.0",
+    "vue": "^3.2.47",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "css-loader": "5.2.7",
+    "style-loader": "2.2.0",
+    "typescript": "^5.0.2",
+    "vue-loader": "^17.0.1",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
