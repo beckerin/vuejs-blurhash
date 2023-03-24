@@ -5,7 +5,7 @@
 
 > VueJS components for using the [blurhash algorithm](https://blurha.sh) in your VueJS projects
 
-[Demo](https://woltapp.github.io/vuejs-blurhash/)
+[Demo](https://beckerin.github.io/vuejs-blurhash/)
 
 ## Install
 
